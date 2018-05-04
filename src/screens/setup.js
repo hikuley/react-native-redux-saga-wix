@@ -1,7 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import store from "./redux/configureRedux";
-import {registerScreens} from './screens';
+import store from "../redux/configureRedux";
+import {registerScreens} from './index';
 import {Navigation} from 'react-native-navigation';
 
 // screen related book keeping
