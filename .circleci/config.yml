@@ -8,15 +8,15 @@ jobs:
 
     steps:
       - checkout:
-          path: ~/project
+          path: ~/react-native-redux-saga-wix
       - attach_workspace:
-          at: ~/project
+          at: ~/react-native-redux-saga-wix
       - run:
           name: Set Ruby Version
           command:  echo "ruby-2.4" > ~/.ruby-version
       - run: cd android && bundle install
       - run: cd android && bundle exec fastlane beta
       - persist_to_workspace:
-          root: ~/project
+          root: ~/react-native-redux-saga-wix
           paths:
             - node_modules
